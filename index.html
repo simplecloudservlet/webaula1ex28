@@ -1,0 +1,111 @@
+<!-- TODO1: jQuery: carregue a biblioteca jQuery e ilustre o funcionamento -->
+<!-- TODO2: jQuery: exiba uma mensagem ao clicar em um botao -->
+<!-- TODO3: jQuery: altere o conteudo de um <input> -->
+<!-- TODO4: jQuery: altere o conteudo de um <label> -->
+<!-- TODO5: jQuery: altere a exibicao de um <table> -->
+
+<!DOCTYPE html>
+<html lang="bzs">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Comércio Eletrônico</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+	<script src="js/scripts.js"></script>
+	<script src="js/decimal.js"></script>
+
+	<!-- TODO1 -->
+	<script src="js/jquery-3.7.1.js"></script>
+
+</head>
+
+<body>
+
+	<!-- TODO1 -->
+	<button id='botao1' onclick="testarJQuery1()">jQuery1: exibir mensagem</button>
+	<br>
+	<br>
+
+	<!-- TODO2 -->
+	<button id='botao2' onclick="testarJQuery2()">jQuery2: exibir mensagem</button>
+	<br>
+	<br>
+
+	<!-- TODO3 -->
+	<input id="input1" type="text" />
+	<button id='botao3' onclick="testarJQuery3()">jQuery3: mudar input</button>
+	<br>
+	<br>
+
+	<!-- TODO4 -->
+	<label id="rotulo1">TODO4</label>
+	<button id='botao4' onclick="testarJQuery4()">jQuery4: mudar rotulo</button>
+	<br>
+	<br>
+
+	<!-- TODO5 -->
+	<!-- Tabela -->
+	<h3>Preço da Venda</h3>
+	<table id="tabela">
+		<tr>
+			<th>Produto</th>
+			<th>Valor</th>
+		</tr>
+		<tr>
+			<td>Régua</td>
+			<td>1,00</td>
+		</tr>
+		<tr>
+			<td>Borracha</td>
+			<td>2,00</td>
+		</tr>
+		<tr>
+			<td>Lápis</td>
+			<td>3,00</td>
+		</tr>
+	</table>
+	<button id='botao5' onclick="testarJQuery5()">jQuery5: mudar tabela</button>
+
+
+	<!-- <button id="btn_inv" onclick="listarVetores()">Listar conteúdo do vetor</button> -->
+
+	<br>
+	<br>
+	<!--
+	<label id="rotuloNome" class="estiloAvaliacao">Nome:</label>
+	<input id="entrada" name="entradaJS" type="text" placeholder="Digite o seu nome" required autofocus />
+	<button id="btn_inv" onclick="inverter()">Maiúsculas</button>
+	-->
+	<br>
+	<br>
+
+
+	<label id="rotuloAvaliacao" class="estiloAvaliacao">Avaliação da Compra</label>
+
+	<br>
+
+	<!-- <label id="rotuloAvaliacao">Avaliação da Compra</label>
+	-->
+
+	<select id="notas" name="notasJS" onchange="avaliarCompra()">
+		<option value="0">0</option>
+		<option value="5">5</option>
+		<option value="10">10</option>
+	</select>
+
+	<figure>
+		<img id='carrinho' src='img/vendas.png' width='100' height='50' alt='vendas'>
+		<figcaption>
+			<p>Comércio Eletrônico.</p>
+		</figcaption>
+	</figure>
+
+	<!-- TODO1 -->
+	<button onclick="comprar()">Efetuar compra</button>
+
+</body>
+
+</html>
